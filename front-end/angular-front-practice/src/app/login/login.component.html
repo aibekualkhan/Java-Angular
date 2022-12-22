@@ -1,0 +1,31 @@
+<section class="login-body">
+    <div class="container mt-5">
+        <div class="card">
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                <div class="username-holder">
+                    <label for="username">Username</label>
+                    <input type="text" 
+                    ngModel
+                    name ="username"
+                    id="username" 
+                    placeholder="Enter your username"
+                    class="form-control">
+                </div>
+                
+                <div class="password-holder">
+                    <label for="password"> Password</label>
+                    <input type="password"
+                    ngModel
+                    name="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    class="form-control">
+                </div>
+                
+                <button class="btn" type="submit" value="login">
+                    <span>Login</span>  
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

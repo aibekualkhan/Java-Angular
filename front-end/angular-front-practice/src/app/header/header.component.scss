@@ -1,0 +1,38 @@
+
+
+header{
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+    text-shadow:1px 1px #b600ff;
+    text-transform:  uppercase;
+    font-size: 29px;
+    z-index: 1000;
+}
+
+.nav-item{
+    border: 1px solid;
+    margin-left: 30px;
+}
+
+.nav-item :hover{
+    color: white;
+    background-color: blue;
+}
+
+.btn{
+    text-transform:  uppercase;
+    border-radius: 0%;
+    border: 1px solid black;
+    box-shadow:1px 1px #b600ff ;
+}
+
+.btn-login:hover{
+    color: white;
+    background-color: blue;
+}
+
+.btn-logout:hover{
+    color: white;
+    background-color: red
+}
