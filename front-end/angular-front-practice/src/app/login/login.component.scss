@@ -1,21 +1,44 @@
 .card{
-    font-family: 'Obviously', serif;
-    padding: 20px;
-    font-weight: 400;
+  background-color: #56ACA1;
+  padding: 20px;
+  font-weight: 400;
+  height: fit-content;
+  color: white;
 }
 
 .password-holder{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-#username, #password{
-    margin-top: 10px;
+#email, #password{
+  margin-top: 10px;
 }
-
 .btn{
-    margin-top: 20px;
-    text-transform:  uppercase;
-    border-radius: 0%;
-    border: 1px solid black;
-    box-shadow:1px 1px #b600ff ;
+  margin-left: 10px;
+  margin-right: 20px;
+  border-radius: 15px;
+  width: 120px;
+  background-color: #E4A48B;
+  font-size: 20px;
+  border: none;
+  height: 30px;
+  color: #FFF9F9;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.btn:hover {
+  background-color: #e59576;
+}
+
+.signup{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+

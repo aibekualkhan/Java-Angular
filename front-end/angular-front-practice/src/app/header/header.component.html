@@ -1,29 +1,26 @@
-<header>
-  <nav class="navbar navbar-expand-lg bg-white px-5">
-    <div class="container-fluid">
-      <span class="navbar-brand">Hello I`m Aibek</span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>            
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/about">About</a>
-          </li>
-          <li *ngIf="checkRoles(['ROLE_ADMIN'])" class="nav-item">
-            <a  class="nav-link active" aria-current="page" routerLink="/admin">Admin Page</a>
-          </li>
-          <li *ngIf="checkRoles(['ROLE_ADMIN', 'ROLE_USER'])" class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/user">Profile</a>
-          </li>
-        </ul>
-        <button *ngIf="!isAuthenticated()" type="button" class="btn btn-login" routerLink="/login" ><span>Login</span></button>
-        <button *ngIf="isAuthenticated()"  type="button" class="btn btn-logout" (click)="logout()"><span>Logout</span></button>
-      </div>
-    </div>
-  </nav>
-</header>
+<div class="header">
+
+    <a  routerLink="home" routerLinkActive="active-link"><img src="assets/pics/logo.svg" alt="Online Therapy"></a>
+    <ul>
+      <li>
+        <a class="nav-link" routerLink="home" routerLinkActive="active-link">Home</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="therapists" routerLinkActive="active-link">Therapists</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="about" routerLinkActive="active-link">About Us</a>
+      </li>
+      <li *ngIf="checkRoles(['ROLE_ADMIN'])" class="nav-item">
+        <a  class="nav-link active" aria-current="page" routerLink="/admin">Admin Page</a>
+      </li>
+      <li *ngIf="checkRoles(['ROLE_ADMIN', 'ROLE_USER'])" class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/user">Profile</a>
+      </li>
+    </ul>
+    <button *ngIf="!isAuthenticated()" routerLink="login" role="button">Login</button>
+    <button *ngIf="isAuthenticated()"  type="button" class="btn btn-logout" (click)="logout()"><span>Logout</span></button>
+
+</div>
+
 

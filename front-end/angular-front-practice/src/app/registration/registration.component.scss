@@ -1,0 +1,39 @@
+.card{
+  display: block;
+  background-color: #56ACA1;
+  padding: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.password-holder, .email-holder{
+  margin-top: 20px;
+}
+
+
+#fullName, #email, #password{
+  margin-top: 10px;
+}
+.btn{
+  margin-left: 10px;
+  margin-right: 20px;
+  border-radius: 15px;
+  width: 120px;
+  background-color: #E4A48B;
+  font-size: 20px;
+  border: none;
+  height: 30px;
+  color: #FFF9F9;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  min-height: calc(100vh - 60px); /* Adjust the value '60px' to match the height of your footer */
+  position: relative;
+}
+
+

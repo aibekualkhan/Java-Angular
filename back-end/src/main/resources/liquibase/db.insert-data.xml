@@ -1,0 +1,234 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+  <changeSet id="1.0.0" author="root">
+    <insert tableName="roles">
+      <column name="role_name" value="ROLE_ADMIN"/>
+    </insert>
+
+    <insert tableName="roles">
+      <column name="role_name" value="ROLE_USER"/>
+    </insert>
+
+    <insert tableName="roles">
+      <column name="role_name" value="ROLE_PSY"/>
+    </insert>
+  </changeSet>
+
+  <changeSet id="1.0.1" author="root">
+    <insert tableName="users">
+      <column name="id" value="1"/>
+
+      <column name="first_name" value="Aibek"/>
+      <column name="last_name" value="Ualkhan"/>
+      <column name="email" value="aibek@aibek.kz"/>
+      <column name="image_url" value="img_1.png"/>
+      <column name="username" value="admin"/>
+      <!-- decrypted password: admin -->
+      <column name="password" value="$2y$10$pFvvSVx2z1QiscbEemqGtOos70fxEvKmqxQgJ/aid5AdqbAcAB6l2"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="2"/>
+
+      <column name="first_name" value="Azamat"/>
+      <column name="last_name" value="Utelkhan"/>
+      <column name="email" value="azamat@azamat.kz"/>
+      <column name="image_url" value="img_2.png"/>
+      <column name="username" value="user"/>
+      <!-- decrypted password: user -->
+      <column name="password" value="$2y$10$gusSDyASkPDFpXokToftJuHS3dmkzPHXoD7BUQqB.Lro0zE5iEoAe"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="3"/>
+
+      <column name="first_name" value="Yernar"/>
+      <column name="last_name" value="Menglibay"/>
+      <column name="email" value="yernar@yernar.kz"/>
+      <column name="image_url" value="img_3.png"/>
+      <column name="username" value="yernar"/>
+      <!-- decrypted password: yernar -->
+      <column name="password" value="$2y$10$1aXYxZFsf2YJ5E333h3.Fuml9JRIUvjUqrTf1SwBrO3ZNrmNcwvSm"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="4"/>
+
+      <column name="first_name" value="Aibek"/>
+      <column name="last_name" value="Ualkhan"/>
+      <column name="email" value="aibek2@aibek.kz"/>
+      <column name="image_url" value="img_4.png"/>
+      <column name="username" value="aibek"/>
+      <!-- decrypted password: aibek -->
+      <column name="password" value="$2y$10$GpBmiRJpSM/bBntwWDY8BO9be3D0eO5RRxInaqy/pXn3fN3R45VDe"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="5"/>
+
+      <column name="first_name" value="Rinat"/>
+      <column name="last_name" value="Kasym"/>
+      <column name="email" value="rinat@rinat.kz"/>
+      <column name="image_url" value="img_5.png"/>
+      <column name="username" value="rinat"/>
+      <!-- decrypted password: rinat -->
+      <column name="password" value="$2y$10$E3YDedtaKYb.pqRfknFQuOj3xAJfPUA9.kyneZ8DT8KcZb.Lw.lES"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="6"/>
+
+      <column name="first_name" value="Alma"/>
+      <column name="last_name" value="Omar"/>
+      <column name="email" value="alma@alma.kz"/>
+      <column name="image_url" value="img_1.png"/>
+      <column name="username" value="alma"/>
+      <!-- decrypted password: alma -->
+      <column name="password" value="$2y$10$ZzbLJYthfnAvn/mKgoRwpOKQQ5w7afumt01OospdJLT8Lyf7Dyotm"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="7"/>
+
+      <column name="first_name" value="Dana"/>
+      <column name="last_name" value="Raim"/>
+      <column name="email" value="dana@dana.kz"/>
+      <column name="image_url" value="img_2.png"/>
+      <column name="username" value="dana"/>
+      <!-- decrypted password: dana -->
+      <column name="password" value="$2y$10$LZ0o6TJT7BWehXoD2Pz0NeHy7QcQ9AJK0FBTFxHezHeXiaZ.zJARy"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="8"/>
+
+      <column name="first_name" value="Rasul"/>
+      <column name="last_name" value="Raim"/>
+      <column name="email" value="rasul@rasul.kz"/>
+      <column name="image_url" value="img_7.png"/>
+      <column name="username" value="rasul"/>
+      <!-- decrypted password: rasul -->
+      <column name="password" value="$2y$10$VrwpOtdQfhxQvN4IW2TWjuHKVFPPCe.G1L7JIL/ze5wc7w1usvCw6"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="9"/>
+
+      <column name="first_name" value="Super"/>
+      <column name="last_name" value="Artur"/>
+      <column name="email" value="super@super.kz"/>
+      <column name="image_url" value="img_8.png"/>
+      <column name="username" value="super"/>
+      <!-- decrypted password: super -->
+      <column name="password" value="$2y$10$lcdkMXIT8YgBKFG2daLjW.nepv85EiMTBiMISK/4PZOI3HuLOkwem"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+
+    <insert tableName="users">
+      <column name="id" value="10"/>
+
+      <column name="first_name" value="Bek"/>
+      <column name="last_name" value="Alim"/>
+      <column name="email" value="bek@bek.kz"/>
+      <column name="image_url" value="img_6.png"/>
+      <column name="username" value="user2"/>
+      <!-- decrypted password: user -->
+      <column name="password" value="$2y$10$5ObX4vxAYPcFCOphSjqlne0TMFqAyCRW9xsORlbT0LK/xfusBkDxi"/>
+
+      <column name="status" value="ACTIVE"/>
+      <column name="created" value="2023-06-07 18:51:21.000000"/>
+      <column name="updated" value="2023-06-07 18:51:21.000000"/>
+    </insert>
+  </changeSet>
+
+  <changeSet id="1.0.2" author="root">
+    <insert tableName="user_roles">
+      <column name="user_id" value="1"/>
+      <column name="role_id" value="1"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="2"/>
+      <column name="role_id" value="2"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="3"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="4"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="5"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="6"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="7"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="8"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="9"/>
+      <column name="role_id" value="3"/>
+    </insert>
+
+    <insert tableName="user_roles">
+      <column name="user_id" value="10"/>
+      <column name="role_id" value="3"/>
+    </insert>
+  </changeSet>
+
+</databaseChangeLog>

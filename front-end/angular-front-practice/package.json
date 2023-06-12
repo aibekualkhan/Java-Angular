@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@andyet/simplewebrtc": "^1.32.0",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
@@ -21,6 +22,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.2",
     "rxjs": "~7.5.0",
+    "simplewebrtc": "^3.0.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

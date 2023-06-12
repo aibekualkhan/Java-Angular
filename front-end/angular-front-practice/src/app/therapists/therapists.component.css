@@ -1,0 +1,136 @@
+.get-started {
+  background-color: white;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.get-started-left {
+  margin-top: 110px;
+  margin-left: 150px;
+}
+
+.get-started img {
+  width: 350px;
+  height: 420px;
+  margin: 80px 100px 60px auto;
+}
+
+h3 {
+  margin-top: 90px;
+  width: 720px;
+}
+
+.get-started-button {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 80px;
+  height: 75px;
+  width: 340px;
+  border-radius: 35px;
+  background-color: #E4A48B;
+  color: white;
+  border: none;
+}
+
+.get-started-button:hover {
+  background-color: #e59576;
+}
+
+.therapists-list {
+  padding-top: 10px;
+  padding-bottom: 60px;
+  background-color: #E4E9EB;
+}
+
+.therapists-list h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 8%;
+}
+
+/*region cards*/
+.card {
+  margin: 20px auto 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 84%;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.card-details {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.card-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 350px;
+  height: 420px;
+  margin-right: 60px;
+  border-radius: 20px;
+}
+
+.card-title {
+  color: grey;
+  font-size: 40px;
+}
+
+.card button {
+  font-weight: bold;
+  margin-top: 10px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #E4A48B;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.social{
+  color: black;
+  margin-right: 20px;
+}
+/*endregion*/
+
+
+/*table {*/
+/*  width: 100%;*/
+/*}*/
+
+/*.mat-mdc-form-field {*/
+/*  font-size: 14px;*/
+/*  width: 100%;*/
+/*}*/
+
+/*td, th {*/
+/*  width: 25%;*/
+/*}*/
+
+/*mat-form-field {*/
+/*  margin-top: 100px;*/
+/*  margin-bottom: 10px;*/
+/*  width: 600px;*/
+/*}*/

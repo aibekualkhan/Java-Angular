@@ -45,6 +45,22 @@ public class UserServiceImpl implements UserService {
 
         return registeredUser;
     }
+    @Override
+    public User registerPsychologist(User user){
+        Set<Role> userRoles = new HashSet<>();
+        userRoles.add(roleRepository.getReferenceById(3L));
+
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setRoles(userRoles);
+        user.setCreated(new Date());
+        user.setUpdated(new Date());
+        user.setStatus(Status.ACTIVE);
+
+        User registeredUser = userRepository.save(user);
+        log.info("IN register - user: {} successfully registered", registeredUser);
+
+        return registeredUser;
+    }
 
     @Override
     public List<User> getAll() {

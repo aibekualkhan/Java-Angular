@@ -1,1 +1,69 @@
-<p>registration works!</p>
+<section class="login-body">
+  <div class="container mt-5">
+    <div class="card">
+      <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+        <div class="firstName-holder">
+          <label for="firstName">First name</label>
+          <input type="text"
+                 ngModel
+                 name ="firstName"
+                 id="firstName"
+                 placeholder="Enter your first name"
+                 class="form-control">
+        </div>
+        <div class="lastName-holder">
+          <label for="lastName">Last name</label>
+          <input type="text"
+                 ngModel
+                 name ="lastName"
+                 id="lastName"
+                 placeholder="Enter your last name"
+                 class="form-control">
+        </div>
+        <div class="username-holder">
+          <label for="username">Username</label>
+          <input type="text"
+                 ngModel
+                 name ="username"
+                 id="username"
+                 placeholder="Enter your username"
+                 class="form-control">
+        </div>
+
+        <div class="email-holder">
+          <label for="email">email</label>
+          <input type="email"
+                 ngModel
+                 name ="email"
+                 id="email"
+                 placeholder="Enter your email"
+                 class="form-control">
+        </div>
+
+        <div class="password-holder">
+          <label for="password"> Password</label>
+          <input type="password"
+                 ngModel
+                 name="password"
+                 id="password"
+                 placeholder="Enter your password"
+                 class="form-control">
+        </div>
+<!--        <label class="mt-4">-->
+<!--          <input type="checkbox" formControlName="isPsychologist"> Are you a psychologist?-->
+<!--        </label>-->
+<!--        <div class="content">-->
+<!--          <div class="certificate-holder mt-4" *ngIf="registerForm.get('isPsychologist')?.value">-->
+<!--            <label for="certificate">Upload Certificate:</label>-->
+<!--            <input type="file" id="certificate" name="certificate" formControlName="certificate">-->
+<!--          </div>-->
+<!--        </div>-->
+        <div class="d-grid gap-2">
+          <button class="btn btn-success mt-4" type="submit" value="register">
+            <span>Register</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

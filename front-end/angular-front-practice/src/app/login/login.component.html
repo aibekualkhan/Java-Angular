@@ -2,29 +2,31 @@
     <div class="container mt-5">
         <div class="card">
             <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
-                <div class="username-holder">
-                    <label for="username">Username</label>
-                    <input type="text" 
-                    ngModel
-                    name ="username"
-                    id="username" 
-                    placeholder="Enter your username"
-                    class="form-control">
-                </div>
-                
-                <div class="password-holder">
-                    <label for="password"> Password</label>
-                    <input type="password"
-                    ngModel
-                    name="password"
-                    id="password"
-                    placeholder="Enter your password"
-                    class="form-control">
-                </div>
-                
-                <button class="btn" type="submit" value="login">
-                    <span>Login</span>  
+              <div class="username-holder">
+                <label for="username">Username</label>
+                <input type="text"
+                       ngModel
+                       name ="username"
+                       id="username"
+                       placeholder="Enter your username"
+                       class="form-control">
+              </div>
+
+              <div class="password-holder">
+                <label for="password"> Password</label>
+                <input type="password"
+                       ngModel
+                       name="password"
+                       id="password"
+                       placeholder="Enter your password"
+                       class="form-control">
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary mt-4" type="submit" value="login">
+                  <span>Login</span>
                 </button>
+                <a class="signup" routerLink="../register" routerLinkActive="active-link">You don`t have an account? Sign up to first!</a>
+              </div>
             </form>
         </div>
     </div>

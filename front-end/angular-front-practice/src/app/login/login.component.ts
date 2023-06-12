@@ -26,9 +26,9 @@ export class LoginComponent {
 
         const role = response.user.roles[0].roleName;
         if(role === 'ROLE_ADMIN'){
-          this.router.navigate(['/admin'])
+          this.router.navigate(['/admin']);
         }else{
-          this.router.navigate(['/user'])
+          this.router.navigate(['/user']);
         }
       },
       error: (error) => {

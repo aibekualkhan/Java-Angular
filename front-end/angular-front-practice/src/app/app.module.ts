@@ -18,6 +18,8 @@ import { AuthGuard } from './_auth/auth.guard';
 import { AuthInterceptor } from './_auth/auth.interceptor';
 import { UserService } from './_services/user.service';
 import { RegistrationComponent } from './registration/registration.component';
+import {TherapistsComponent} from "./therapists/therapists.component";
+import {OnlineCounsellingComponent} from "./online-counselling/online-counselling.component";
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { RegistrationComponent } from './registration/registration.component';
     UserComponent,
     AboutComponent,
     FooterComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    TherapistsComponent,
+    OnlineCounsellingComponent
   ],
   imports: [
     BrowserModule,

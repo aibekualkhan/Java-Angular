@@ -1,24 +1,27 @@
-<section  class="home-welcome">
-    <div class="container pt-5">
-        <div class="card  text-center" >
-            <h2>
-                Hello everyone, welcome to my test web site or as it is also called a pet project. 
-                Here I check different functions of <a class="framework-link" href="https://spring.io/">Spring framework</a> and 
-                <a class="framework-link" href="https://angular.io/">angular</a>. 
-                I will also be posting future projects here.
+<div class="main-section">
+  <div class="wrapper">
+    <h1 class="welcome-words">Flexible support that fits around<br>your lifestyle</h1>
+    <h2 class="welcome-words">We offer multiple ways to improve your mental health online.<br>
+      Get the help you need regardless of your schedule or location.</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/pics/psychologists-image.jpg" alt="Psychologists-Image">
+        <p class="card-title">Psychologists</p>
+        <p class="card-description">A psychologist is a professional who<br>studies and treats mental processes<br>and behavior.</p>
+        <button (click)="goToTherapists()">Psychologists profiles</button>
+      </div>
 
-                Maybe you wondered why this website looks so aweful. So it`s becasuse you are not true programmer:)
-            </h2>  
-        </div>
+      <div class="card">
+        <img src="assets/pics/therapy-image.jfif" alt="Therapy-Image">
+        <p class="card-title">Therapy</p>
+        <p class="card-description">Book time to speak with any of our<br>highly qualified psychologists via video<br>or live chat.</p>
+        <button>Read About Our Therapy</button>
+      </div>
     </div>
-</section>
-<section class="home-posts">
-    <div class="container pt-5">
-        <div class="card text-center">
-            <h2>
-                Here you will see admin`s posts!
-                If you don`t see anything, it means that admin didn`t post anything
-            </h2>
-        </div>
-    </div>
-</section>
+  </div>
+</div>
+
+<div class="blog">
+  <h1>Our psychologists are actively blogging.<br>You can read about it here</h1>
+  <button class="go-to-block-btn">Go to blog</button>
+</div>

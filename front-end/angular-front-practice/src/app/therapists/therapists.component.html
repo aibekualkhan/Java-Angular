@@ -1,0 +1,51 @@
+<div class="get-started">
+
+  <div class="get-started-left">
+    <h1>Therapy that fits around you</h1>
+    <h3>Get matched to a psychologist and start therapy at a time and place that suits you — via video or live chat.</h3>
+    <button class="get-started-button">Get started</button>
+  </div>
+  <img src="assets/pics/get-started-image.svg" alt="Image">
+
+</div>
+
+<div class="therapists-list">
+
+  <h1>Choose your psychologist</h1>
+
+  <div *ngFor="let item of dataSource; let i = index" class="card">
+    <div class="card-details">
+      <img src="assets/photo/{{item.imageUrl}}" alt="avatar">
+
+      <div class="card-texts">
+        <p class="card-title">{{item.firstName + " " + item.lastName}}</p>
+        <p>CEO & Founder, Example</p>
+        <br>
+        <br>
+        <p>Harvard University</p>
+        <br>
+        <br>
+        <br>
+        <h5 style="text-align: left; margin-bottom: 120px">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur dolores exercitationem,
+          expedita laborum mollitia numquam optio qui? Consequatur eveniet, ipsa mollitia repellat rerum suscipit voluptas? Dicta dolores nemo quidem?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum et excepturi hic ipsa rem suscipit!
+          Deserunt dignissimos distinctio dolores eveniet, expedita fuga id, illum odio, quo sint suscipit ullam velit?
+        </h5>
+        <div>
+          <a href="#" class="social"><i class="fa fa-dribbble"></i></a>
+          <a href="#" class="social"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <span>
+      <button>Contact</button>
+    </span>
+
+  </div>
+
+</div>

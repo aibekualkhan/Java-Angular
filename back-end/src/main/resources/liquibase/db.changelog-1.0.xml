@@ -25,6 +25,10 @@
                 <constraints nullable="false"/>
             </column>
 
+            <column name="image_url" type="VARCHAR(255)">
+                <constraints nullable="true"/>
+            </column>
+
             <column name="password" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
@@ -105,6 +109,10 @@
 
         <insert tableName="roles">
             <column name="role_name" value="ROLE_USER"/>
+        </insert>
+
+        <insert tableName="roles">
+            <column name="role_name" value="ROLE_PSY"/>
         </insert>
     </changeSet>
 

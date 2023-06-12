@@ -10,8 +10,9 @@ public class RegistrationRequestDto {
     private String username;
     private String password;
     private String firstName;
-    private String lastName;
     private String email;
+    private String imageUrl;
+    private String lastName;
 
     public User toUser(){
         User user = new User();
@@ -20,6 +21,7 @@ public class RegistrationRequestDto {
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setEmail(email);
+        user.setImageUrl(imageUrl);
         return user;
     }
 }

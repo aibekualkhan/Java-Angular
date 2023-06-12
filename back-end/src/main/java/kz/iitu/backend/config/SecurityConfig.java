@@ -26,6 +26,7 @@ public class SecurityConfig {
     private static final String ADMIN_ENDPOINT = "/api/v1/admin/*";
     private static final String LOGIN_ENDPOINT = "/api/v1/login";
     private static final String REGISTER_ENDPOINT = "/api/v1/register";
+    private static final String GET_PSY = "/api/v1/get-psychologists";
 
     @Autowired
     public SecurityConfig(JwtTokenFilter jwtTokenFilter,
@@ -48,7 +49,7 @@ public class SecurityConfig {
                 .exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint)
                 .and()
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers(LOGIN_ENDPOINT).permitAll()
+                        .requestMatchers(LOGIN_ENDPOINT, GET_PSY).permitAll()
                         .requestMatchers(REGISTER_ENDPOINT).permitAll()
                         .requestMatchers(HttpHeaders.ALLOW).permitAll()
                         .requestMatchers(ADMIN_ENDPOINT).hasRole("ADMIN")
